@@ -19,7 +19,7 @@ AlignConsecutiveMacros: true
 # 允许函数声明的所有参数在放在下一行  
 AllowAllParametersOfDeclarationOnNextLine: true
 # 允许短的块放在同一行  
-AllowShortBlocksOnASingleLine : false
+AllowShortBlocksOnASingleLine : true
 # 允许短的case标签放在同一行
 AllowShortCaseLabelsOnASingleLine: false
 # 允许短的函数放在同一行: None, InlineOnly(定义在类中), Empty(空函数), Inline(定义在类中，空函数), All 
@@ -31,12 +31,12 @@ AllowShortLoopsOnASingleLine: false
 # 总是在定义返回类型后换行(deprecated)   
 AlwaysBreakAfterDefinitionReturnType: None
 # 每行字符的限制，0表示没有限制  
-ColumnLimit: 150
+ColumnLimit: 0
 # 描述具有特殊意义的注释的正则表达式，它不应该被分割为多行或以其它方式改变
 CommentPragmas: '^(/\*|\s*/\*|\s*\*)'
 # 语言: None Cpp Java Objc Protp
 Language: Cpp 
-#指针的*的挨着哪边
+# 指针的*的挨着哪边
 PointerAlignment: Right
 #缩进宽度
 IndentWidth: 4

@@ -4,7 +4,7 @@ $FormatSourcePath = "Source", "Src", "include", "Inc"
 $ExcludeFiles = 
 
 # 不在源码目录下需要进行格式化的文件
-$FormatFiles = 
+$ExtraFormatFiles = "test.c"
 
 if (-not (Test-Path -Path .\.clang-format))
 {
@@ -42,7 +42,7 @@ foreach ($path in $FormatSourcePath)
     }
 }
 
-foreach ($file in $FormatFiles)
+foreach ($file in $ExtraFormatFiles)
 {
     Write-Host ("Formatting File {0}" -f $file)
     &".\clang-format.exe" -style=file -i $file
